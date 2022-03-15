@@ -35,6 +35,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="View.cs" />
     <Compile Include="Validation.cs" />
+    <Compile Include="Service.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

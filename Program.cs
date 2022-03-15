@@ -2,11 +2,12 @@
 
 namespace GuessingGameDemo
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Startup game = new Startup();
+            game.Run();
         }
     }
 }
