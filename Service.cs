@@ -8,6 +8,8 @@ namespace GuessingGameDemo
 
         public int GuessCount { get; set; }
         public int TargetNum { get; private set; }
+
+        // We just keep this to report on it with the View as we run in Startup
         public int MaxNum { get; private set; }
 
         public void CreateRandomNumber(int maxVal)
