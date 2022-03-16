@@ -7,7 +7,7 @@ namespace GuessingGameDemo
         private static void Main()
         {
             Console.WriteLine("Add this feature on teh dev branch");
-            Startup game = new Startup();
+            var game = new Startup();
             game.Run();
         }
     }
