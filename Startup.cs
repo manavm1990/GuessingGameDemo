@@ -9,7 +9,7 @@ namespace GuessingGameDemo
 
         public void Run()
         {
-            int maxNum = View.GetMaxNum();
+            var maxNum = View.GetMaxNum();
             _service.CreateRandomNumber(maxNum);
 
             while(true)
@@ -21,14 +21,13 @@ namespace GuessingGameDemo
         public bool CheckGuess()
         {
             View.DisplayMessage($"Guess a number between 1 and {_service.MaxNum}");
-            int userGuess = View.GetGuess(_service.MaxNum);
+            var userGuess = View.GetGuess(_service.MaxNum);
 
             _service.GuessCount++;
 
             if (userGuess == _service.TargetNum)
             {
                 View.DisplayMessage($"You win! 🎊 The number was {_service.TargetNum} and it took {_service.GuessCount} guesses.");
-
                 return true;
             }
 

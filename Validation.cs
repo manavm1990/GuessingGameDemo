@@ -13,7 +13,7 @@ namespace GuessingGameDemo
 
         private static string PromptRequired(string message)
         {
-            string res = PromptUser(message);
+            var res = PromptUser(message);
             while (string.IsNullOrEmpty(res))
             {
                 Console.WriteLine("Input required❗");
