@@ -1,7 +1,8 @@
 ﻿using System;
+
 namespace GuessingGameDemo
 {
-    public class Validation
+    internal static class Validation
     {
         private static void Prompt2Continue()
         {

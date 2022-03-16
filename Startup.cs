@@ -1,9 +1,6 @@
-﻿using System;
-using System.Security.Cryptography.X509Certificates;
-
-namespace GuessingGameDemo
+﻿namespace GuessingGameDemo
 {
-    class Startup
+    internal class Startup
     {
         private readonly Service _service = new Service();
 
@@ -12,7 +9,7 @@ namespace GuessingGameDemo
             var maxNum = View.GetMaxNum();
             _service.CreateRandomNumber(maxNum);
 
-            while(true)
+            while (true)
             {
                 if (CheckGuess()) break;
             }
@@ -27,7 +24,8 @@ namespace GuessingGameDemo
 
             if (userGuess == _service.TargetNum)
             {
-                View.DisplayMessage($"You win! 🎊 The number was {_service.TargetNum} and it took {_service.GuessCount} guesses.");
+                View.DisplayMessage(
+                    $"You win! 🎊 The number was {_service.TargetNum} and it took {_service.GuessCount} guesses.");
                 return true;
             }
 

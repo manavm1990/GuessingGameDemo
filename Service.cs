@@ -1,7 +1,8 @@
 ﻿using System;
+
 namespace GuessingGameDemo
 {
-    public class Service
+    internal class Service
     {
         private readonly Random _random = new Random();
         // TODO: Duplicate guessing

@@ -1,7 +1,8 @@
 ﻿using System;
+
 namespace GuessingGameDemo
 {
-    class View
+    internal static class View
     {
         public static void DisplayMessage(string message)
         {
